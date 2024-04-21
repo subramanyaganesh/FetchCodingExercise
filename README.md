@@ -9,7 +9,7 @@ This project utilizes Selenium along with ChromeDriver(webdriver) to facilitate 
 5. The chrome driver added in the project is compatible with mac-arm64. If Windows is being used then the corresponding chromedriver has to be downloaded and placed in the location of "chromedriver" in the root directory 
 6. ChromeDriver for mac [ download link](https://storage.googleapis.com/chrome-for-testing-public/123.0.6312.122/mac-arm64/chromedriver-mac-arm64.zip). By default this is installed and placed in the root folder.
 7. chromedriver for other OS can be found [here](https://googlechromelabs.github.io/chrome-for-testing/)
-
+8. During the execution of the test, it is kindly advised to avoid overriding the flow, such as switching to a different Chrome window while the automation is running.
 
 # Steps to follow
 1. Clone the project from the git repository

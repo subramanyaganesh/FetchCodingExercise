@@ -8,6 +8,9 @@ public class TestPlan {
     private static final WebDriver driver = new ChromeDriver();
 
 
+    //using testng's annotations to run tests
+
+
     @BeforeSuite
     public static void setClass() {
         System.setProperty("webdriver.chrome.driver", Utils.CHROME_DRIVER_LOCATION);
