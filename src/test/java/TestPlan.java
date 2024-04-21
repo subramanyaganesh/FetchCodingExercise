@@ -37,8 +37,6 @@ public class TestPlan {
 
         }
         automation.clickGoldBarNumber();
-
-
     }
 
     @AfterSuite

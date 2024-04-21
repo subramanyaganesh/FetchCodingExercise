@@ -87,7 +87,7 @@ public class Automation extends PageObject {
     }
 
     public String getMeasurementResult(){
-       return this.result.getText();
+        return this.result.getText();
     }
 
     public void decision() {
@@ -105,7 +105,7 @@ public class Automation extends PageObject {
     }
 
     public void clickGoldBarNumber(){
-        System.out.println("coin_" + Utils.answer);
+        System.out.println("The defective gold Bar is bar number::"+  Utils.answer);
         driver.findElement(By.id("coin_" + Utils.answer)).click();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         Alert alert = driver.switchTo().alert();
@@ -113,7 +113,8 @@ public class Automation extends PageObject {
         System.out.println("Alert message: " + alertMessage);
         alert.accept();
         Assert.assertEquals(alertMessage, "Yay! You find it!");
-        System.out.println(Utils.weighingMade);
+        System.out.println("The number of iterations are = "+Utils.weighingMade.size());
+        System.out.println("The list of comparison results are = "+Utils.weighingMade);
     }
 
 
