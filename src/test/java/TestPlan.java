@@ -4,6 +4,8 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
+import java.util.concurrent.TimeUnit;
+
 public class TestPlan {
     private static final WebDriver driver = new ChromeDriver();
 
@@ -25,16 +27,16 @@ public class TestPlan {
             automation.fillingBowles(Utils.group1, Utils.group2);
             automation.clickButtons("weigh");
             try {
-                Thread.sleep(2000);
+                TimeUnit.SECONDS.sleep(2);
             } catch (InterruptedException e) {
-                //
+                e.printStackTrace();
             }
             automation.decision();
             automation.gettingListOfWeights();
             try {
-                Thread.sleep(2000);
+                TimeUnit.SECONDS.sleep(2);
             } catch (InterruptedException e) {
-                //
+                e.printStackTrace();
             }
             automation.clickButtons("reset");
 
