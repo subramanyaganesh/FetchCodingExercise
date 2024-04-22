@@ -14,7 +14,7 @@ This project utilizes Selenium along with ChromeDriver(webdriver) to facilitate 
 # Steps to follow
 1. Clone the project from the git repository
 ```
-git clone git@github.com:subramanyaganesh/FetchCodingExercise.git
+git clone https://github.com/subramanyaganesh/FetchCodingExercise.git
 ```
 2. move into the folder
 ```
